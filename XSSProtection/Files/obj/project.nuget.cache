@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2GgHrqvccQdRs5oCZlB5/j/bctsJ4oXNLsvtKLD7leMkdu4DHM7mKNHgP06pd27aYh2t80N2wAGiV9GvFlVHZw==",
+  "dgSpecHash": "L/HUSbpxfV3ZIzyouXyasdJZ48gqmpd9Loyax6ZB3RaNBmVfVzI2jH7mnQEGCOTe4W9FZgdZR45ianIwu0T0MQ==",
   "success": true,
-  "projectFilePath": "C:\\CI\\work\\BuildProduct\\Deploy\\Terrasoft.WebApp\\Terrasoft.Configuration\\Pkg\\XSSProtection\\Files\\XSSProtection.csproj",
+  "projectFilePath": "C:\\8.0.10.4735_SalesEnterprise_Softkey_MSSQL_ENU\\Terrasoft.WebApp\\Terrasoft.Configuration\\Pkg\\XSSProtection\\Files\\XSSProtection.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

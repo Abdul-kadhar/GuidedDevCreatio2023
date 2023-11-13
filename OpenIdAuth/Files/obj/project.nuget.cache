@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aZHWso1FpQ6vMNZlfNJsiofkFAU7FMaEWg5tRbq94GvHhwmHof4vbSUNaVfa5Fa1YIsEFthpqe79No0rwGWWbw==",
+  "dgSpecHash": "n1vx0CYTkwyNWpFldE0Y10/XL+egz2yO1YyhxdTuREnmAByezxQbjNrZbDgIDxwJq1kxoi2oEbkrQUwqkxztCQ==",
   "success": true,
-  "projectFilePath": "C:\\CI\\work\\BuildProduct\\Deploy\\Terrasoft.WebApp\\Terrasoft.Configuration\\Pkg\\OpenIdAuth\\Files\\OpenIdAuth.csproj",
+  "projectFilePath": "C:\\8.0.10.4735_SalesEnterprise_Softkey_MSSQL_ENU\\Terrasoft.WebApp\\Terrasoft.Configuration\\Pkg\\OpenIdAuth\\Files\\OpenIdAuth.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9u0Xh6hto7vOvKYJysVVQKJ/I3CO816MS2w+ZEaIHN9K597SNkvOZP1gkTxoHUCqDcAqSmcPZigiabTemVFqVg==",
+  "dgSpecHash": "UBBulngR1JEU+qENVbOdwb5WneBOn980fSk6JYiloogzqAw8NBd6aj/dQjoeE+okbO+r4LQCJn6LuFiiHHY+0A==",
   "success": true,
-  "projectFilePath": "C:\\CI\\work\\BuildProduct\\Deploy\\Terrasoft.WebApp\\Terrasoft.Configuration\\Pkg\\Finesse\\Files\\Finesse.csproj",
+  "projectFilePath": "C:\\8.0.10.4735_SalesEnterprise_Softkey_MSSQL_ENU\\Terrasoft.WebApp\\Terrasoft.Configuration\\Pkg\\Finesse\\Files\\Finesse.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

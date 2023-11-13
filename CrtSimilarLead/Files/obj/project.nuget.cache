@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jMPAqfjDo1Q6+1crF011FwpzCVXTamNvuTVJdt4dPwEtexuq4CPm9Mh25Z2dZa7zUG71htOjNS0+PqmaR9cFFg==",
+  "dgSpecHash": "LRpzmR+cHKD1kKDzTJKha6/cEqadqxW2B1aSdwH3ASa6/Kgx2jfRSY5cCb/auN/JW2uMCf6vFf/OQFbDOThJ0Q==",
   "success": true,
-  "projectFilePath": "C:\\CI\\work\\BuildProduct\\Deploy\\Terrasoft.WebApp\\Terrasoft.Configuration\\Pkg\\CrtSimilarLead\\Files\\CrtSimilarLead.csproj",
+  "projectFilePath": "C:\\8.0.10.4735_SalesEnterprise_Softkey_MSSQL_ENU\\Terrasoft.WebApp\\Terrasoft.Configuration\\Pkg\\CrtSimilarLead\\Files\\CrtSimilarLead.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
