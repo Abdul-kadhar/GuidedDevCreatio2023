@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "a00051f4-cde3-4f3f-b08e-c5ad1a5c735a",
     "Name": "Custom",
-    "ModifiedOnUtc": "\/Date(1699623652000)\/",
+    "ModifiedOnUtc": "\/Date(1700052614000)\/",
     "Maintainer": "Customer",
     "Description": "Custom Package",
     "DependsOn": [
@@ -327,6 +327,11 @@
         "UId": "4a37386b-d976-41f8-a469-63bd93d24027",
         "PackageVersion": "7.8.0",
         "Name": "ProductBase"
+      },
+      {
+        "UId": "4c7f489a-eaea-4161-9248-94d1e5a5a925",
+        "Name": "UsrRealtyFRUI",
+        "Type": 1
       },
       {
         "UId": "4e9b7aff-71f7-46eb-bad9-60cfdc0a54c2",
