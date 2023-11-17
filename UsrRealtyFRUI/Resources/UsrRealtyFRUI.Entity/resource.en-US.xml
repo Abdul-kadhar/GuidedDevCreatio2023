@@ -3,7 +3,14 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Realty FRUI" />
+			<Item Name="Columns.UsrArea.Caption" Value="Area, sqft" />
+			<Item Name="Columns.UsrC.Caption" Value="Comment" />
+			<Item Name="Columns.UsrCo.Caption" Value="Comment" />
+			<Item Name="Columns.UsrComment.Caption" Value="Comment" />
 			<Item Name="Columns.UsrName.Caption" Value="Name" />
+			<Item Name="Columns.UsrOfferType.Caption" Value="Offer Type" />
+			<Item Name="Columns.UsrPriceUSD.Caption" Value="Price, USD" />
+			<Item Name="Columns.UsrType.Caption" Value="Type" />
 		</Items>
 	</Group>
 </Resources>

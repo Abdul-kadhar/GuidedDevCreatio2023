@@ -3,6 +3,30 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Realty FRUI form page" />
+			<Item Name="LocalizableStrings.addRecord_3yxzxfk_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_aa13m71_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.Button_9g1m9a0_caption.Value" Value="Push Me!" />
+			<Item Name="LocalizableStrings.ExpansionPanel_g0w57lb_title.Value" Value="Expanded list" />
+			<Item Name="LocalizableStrings.ExpansionPanel_uuxtqm9_title.Value" Value="Realty Visit (FreedomUI)" />
+			<Item Name="LocalizableStrings.ExpansionPanel_zveru4c_title.Value" Value="Expanded list" />
+			<Item Name="LocalizableStrings.GridDetailAddBtn_11ehqqt_caption.Value" Value="New" />
+			<Item Name="LocalizableStrings.GridDetailAddBtn_947hs1s_caption.Value" Value="New" />
+			<Item Name="LocalizableStrings.GridDetailAddBtn_m46us5u_caption.Value" Value="New" />
+			<Item Name="LocalizableStrings.GridDetailExportDataBtn_95itakb_caption.Value" Value="Export to Excel" />
+			<Item Name="LocalizableStrings.GridDetailExportDataBtn_mw5esf9_caption.Value" Value="Export to Excel" />
+			<Item Name="LocalizableStrings.GridDetailExportDataBtn_y45xy02_caption.Value" Value="Export to Excel" />
+			<Item Name="LocalizableStrings.GridDetailImportDataBtn_20kjews_caption.Value" Value="Data import" />
+			<Item Name="LocalizableStrings.GridDetailImportDataBtn_2dt0alj_caption.Value" Value="Data import" />
+			<Item Name="LocalizableStrings.GridDetailImportDataBtn_64ovm4q_caption.Value" Value="Data import" />
+			<Item Name="LocalizableStrings.GridDetailRefreshBtn_05kbbzc_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.GridDetailRefreshBtn_3oi9lbo_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.GridDetailRefreshBtn_d7ci9g3_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.GridDetailSearchFilter_a5tysk0_placeholder.Value" Value="Search" />
+			<Item Name="LocalizableStrings.GridDetailSearchFilter_afq8voa_placeholder.Value" Value="Search" />
+			<Item Name="LocalizableStrings.GridDetailSearchFilter_m69ai70_placeholder.Value" Value="Search" />
+			<Item Name="LocalizableStrings.GridDetailSettingsBtn_e0sczrw_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.GridDetailSettingsBtn_gm4hcdc_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.GridDetailSettingsBtn_oo11t5d_caption.Value" Value="Actions" />
 		</Items>
 	</Group>
 </Resources>

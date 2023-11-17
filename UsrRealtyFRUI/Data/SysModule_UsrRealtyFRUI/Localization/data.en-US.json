@@ -1,4 +1,4 @@
-{
+﻿{
   "PackageData": [
     {
       "Row": [
@@ -12,11 +12,11 @@
           "ColumnName": "Caption",
           "Value": "Realty FRUI"
         },
-				{
-					"SchemaColumnUId": "48b260f5-5aad-608c-73a9-2b835ef697f4",
+        {
+          "SchemaColumnUId": "48b260f5-5aad-608c-73a9-2b835ef697f4",
           "ColumnName": "Description",
-					"Value": ""
-				},
+          "Value": ""
+        },
         {
           "SchemaColumnUId": "7b904e78-84bf-408c-a7a1-1287e66837d3",
           "ColumnName": "ModuleHeader",

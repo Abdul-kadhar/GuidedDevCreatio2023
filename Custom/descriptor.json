@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "a00051f4-cde3-4f3f-b08e-c5ad1a5c735a",
     "Name": "Custom",
-    "ModifiedOnUtc": "\/Date(1700052614000)\/",
+    "ModifiedOnUtc": "\/Date(1700122792000)\/",
     "Maintainer": "Customer",
     "Description": "Custom Package",
     "DependsOn": [
@@ -1043,6 +1043,11 @@
         "UId": "f9a361ad-8965-4c55-922a-d13d1bac8c39",
         "PackageVersion": "7.8.0",
         "Name": "OmnichannelMessaging"
+      },
+      {
+        "UId": "faa9b86b-a2db-4b29-94d4-ec6371175a88",
+        "Name": "UsrApp_xuh24qo",
+        "Type": 1
       },
       {
         "UId": "fbf9dd14-92d2-4e35-b193-e69ced12ae44",

@@ -4,6 +4,7 @@
 		<Items>
 			<Item Name="Caption" Value="Realty FRUI" />
 			<Item Name="Columns.UsrName.Caption" Value="Название" />
+			<Item Name="Columns.UsrPriceUSD.Caption" Value="Price in Russain" />
 		</Items>
 	</Group>
 </Resources>
