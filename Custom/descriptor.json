@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "a00051f4-cde3-4f3f-b08e-c5ad1a5c735a",
     "Name": "Custom",
-    "ModifiedOnUtc": "\/Date(1700122792000)\/",
+    "ModifiedOnUtc": "\/Date(1700233972000)\/",
     "Maintainer": "Customer",
     "Description": "Custom Package",
     "DependsOn": [
@@ -51,6 +51,12 @@
         "UId": "062de047-62f1-4580-85e2-0417d450a3a8",
         "PackageVersion": "7.8.0",
         "Name": "BaseScoring"
+      },
+      {
+        "UId": "06b2f9c5-2217-4cca-9749-77d954e77765",
+        "PackageVersion": "1.0.0",
+        "Name": "GlbDataBinding",
+        "Type": 1
       },
       {
         "UId": "06d9ef10-51d8-122c-8933-9212e84236c9",

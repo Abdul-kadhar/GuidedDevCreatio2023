@@ -27,6 +27,7 @@
 			<Item Name="LocalizableStrings.GridDetailSettingsBtn_e0sczrw_caption.Value" Value="Actions" />
 			<Item Name="LocalizableStrings.GridDetailSettingsBtn_gm4hcdc_caption.Value" Value="Actions" />
 			<Item Name="LocalizableStrings.GridDetailSettingsBtn_oo11t5d_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.NumberInput_d92mvk3_label.Value" Value="Number" />
 		</Items>
 	</Group>
 </Resources>

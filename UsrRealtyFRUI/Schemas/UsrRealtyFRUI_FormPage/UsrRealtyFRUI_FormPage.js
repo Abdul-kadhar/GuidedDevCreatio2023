@@ -1,3 +1,4 @@
+/* jshint esversion:11 */
 define("UsrRealtyFRUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/()/**SCHEMA_ARGS*/ {
 	return {
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
@@ -193,6 +194,29 @@ define("UsrRealtyFRUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 			},
 			{
 				"operation": "insert",
+				"name": "NumberInput_d61xjgs",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"row": 4,
+						"colSpan": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.NumberInput",
+					"label": "$Resources.Strings.NumberAttribute_fbnvoiu",
+					"labelPosition": "auto",
+					"control": "$NumberAttribute_fbnvoiu",
+					"visible": true,
+					"readonly": true,
+					"placeholder": "",
+					"tooltip": ""
+				},
+				"parentName": "SideAreaProfileContainer",
+				"propertyName": "items",
+				"index": 3
+			},
+			{
+				"operation": "insert",
 				"name": "UsrType",
 				"values": {
 					"layoutConfig": {
@@ -288,6 +312,28 @@ define("UsrRealtyFRUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
 				"index": 2
+			},
+			{
+				"operation": "insert",
+				"name": "UsrCommisionPercent",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"row": 2,
+						"colSpan": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.NumberInput",
+					"label": "$Resources.Strings.UsrOfferTypeUsrCommisionPercent",
+					"control": "$UsrOfferTypeUsrCommisionPercent",
+					"readonly": true,
+					"placeholder": "",
+					"labelPosition": "auto",
+					"tooltip": ""
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 3
 			},
 			{
 				"operation": "insert",
@@ -605,11 +651,31 @@ define("UsrRealtyFRUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 				"NumberAttribute_ww6zimk": {
 					"modelConfig": {
 						"path": "PDS.UsrPriceUSD"
-					}
-				},
+					},
+					 "validators": {
+            			"PositiveValueValidator": {
+                			"type": "usr.DGValidator",
+               				 "params": {
+								 "minValue": 1000,
+								 "message": "Price must be greater than zero"
+							 }
+						}
+					 }
+								 
+                    	
+					},
 				"NumberAttribute_dh86nqg": {
 					"modelConfig": {
 						"path": "PDS.UsrArea"
+					},
+					"validators": {
+            			"PositiveValueValidator": {
+                			"type": "usr.DGValidator",
+							"params": {
+								"minValue": 100,
+								"message": " Area must be greater than zero"
+							}
+						}
 					}
 				},
 				"LookupAttribute_1fvften": {
@@ -674,6 +740,16 @@ define("UsrRealtyFRUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 							}
 						}
 					}
+				},
+				"NumberAttribute_fbnvoiu": {
+					"modelConfig": {
+						"path": "PDS.UsrCommisionUSD"
+					}
+				},
+				"UsrOfferTypeUsrCommisionPercent": {
+					"modelConfig": {
+						"path": "PDS.UsrOfferTypeUsrCommisionPercent"
+					}
 				}
 			}
 		}/**SCHEMA_VIEW_MODEL_CONFIG*/,
@@ -682,7 +758,13 @@ define("UsrRealtyFRUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
 				"PDS": {
 					"type": "crt.EntityDataSource",
 					"config": {
-						"entitySchemaName": "UsrRealtyFRUI"
+						"entitySchemaName": "UsrRealtyFRUI",
+						"attributes": {
+							"UsrOfferTypeUsrCommisionPercent": {
+								"path": "UsrOfferType.UsrCommisionPercent",
+								"type": "ForwardReference"
+							}
+						}
 					},
 					"scope": "page"
 				},
@@ -733,10 +815,60 @@ define("UsrRealtyFRUI_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**
             /* Call the next handler if it exists and return its result. */
             		return next?.handle(request);
 				}
-			}
-			
+			},
+			{
+				
+    				request: "crt.HandleViewModelAttributeChangeRequest",
+    /* The custom implementation of the system query handler. */
+    				handler: async (request, next) => {
+        /* If the UsrPriceUSD field changes, take the following steps. */
+        				if (request.attributeName === 'NumberAttribute_ww6zimk' || // if price changed
+            				request.attributeName === 'UsrOfferTypeUsrCommisionPercent' ) { // or multiplier changed 
+            				var price = await request.$context.NumberAttribute_ww6zimk;
+            				var percent = await request.$context.UsrOfferTypeUsrCommisionPercent;
+            				var commission = price * percent / 100;
+            				request.$context.NumberAttribute_fbnvoiu = commission;
+						}
+						/* Call the next handler if it exists and return its result. */
+        				return next?.handle(request);
+					}
+			   }			
 		]/**SCHEMA_HANDLERS*/,
 		converters: /**SCHEMA_CONVERTERS*/{}/**SCHEMA_CONVERTERS*/,
-		validators: /**SCHEMA_VALIDATORS*/{}/**SCHEMA_VALIDATORS*/
+		validators: /**SCHEMA_VALIDATORS*/{
+			/* The validator type must contain a vendor prefix.
+    		Format the validator type in PascalCase. */
+    		"usr.DGValidator": {
+        		validator: function (config) {
+            		return function (control) {
+               			let value = control.value;
+                		let minValue = config.minValue;
+               	 		let valueIsCorrect = value >= minValue;
+                		let result;
+                		if (valueIsCorrect) {
+                    		result = null;
+                			} else {
+                    			result = {	
+                        			"usr.DGValidator": {
+                            			message: config.message
+									}
+								};
+							}
+						    return result;
+					};
+				},
+				params: [
+					{
+						name: "minValue"
+					},
+					{
+						name: "message"
+					}
+					],
+					async: false
+			}
+		
+     
+		}/**SCHEMA_VALIDATORS*/
 	};
 });
